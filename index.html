@@ -2,38 +2,72 @@
 <html lang="uk">
 <head>
   <meta charset="UTF-8" />
-  <title>Мій стильний сайт</title>
+  <title>Махаони в лісі</title>
   <style>
+    /* Фонове зображення лісу на всю сторінку */
     body {
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #f9f9f9;
-      color: #333;
-      max-width: 700px;
-      margin: 40px auto;
-      padding: 20px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      border-radius: 10px;
+      background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1350&q=80') no-repeat center center fixed;
+      background-size: cover;
+      height: 100vh;
+      position: relative;
+      color: white;
+      text-shadow: 2px 2px 4px #000000aa;
     }
     h1 {
-      color: #2c3e50;
+      text-align: center;
+      margin: 20px 0 10px;
+      font-size: 3em;
+      font-weight: 700;
     }
     p {
-      font-size: 18px;
-      line-height: 1.6;
+      text-align: center;
+      font-size: 1.5em;
+      margin-bottom: 40px;
     }
-    a {
-      color: #2980b9;
-      text-decoration: none;
+    /* Метелики махаони */
+    .butterfly {
+      position: absolute;
+      width: 80px;
+      height: 80px;
+      background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Graphium_agalantis_MHNT_dos.jpg/120px-Graphium_agalantis_MHNT_dos.jpg') no-repeat center/contain;
+      animation-timing-function: linear;
+      opacity: 0.85;
+      filter: drop-shadow(0 0 5px rgba(0,0,0,0.7));
     }
-    a:hover {
-      text-decoration: underline;
+    /* Анімація руху */
+    @keyframes fly {
+      0% {
+        transform: translateX(0) translateY(0) rotate(0deg);
+        opacity: 0.85;
+      }
+      50% {
+        transform: translateX(100vw) translateY(20vh) rotate(180deg);
+        opacity: 1;
+      }
+      100% {
+        transform: translateX(0) translateY(40vh) rotate(360deg);
+        opacity: 0.85;
+      }
     }
   </style>
 </head>
 <body>
-  <h1>Вітаю на моєму сайті!</h1>
-  <p>Це приклад гарного простого дизайну.</p>
-  <p>Тут можна додати посилання, фото або ще щось цікаве.</p>
-  <a href="https://github.com/">Мій GitHub</a>
+  <h1>Махаони в лісі 🦋🌲</h1>
+  <p>Насолоджуйся красою природи під приємну музику!</p>
+
+  <audio controls autoplay loop>
+    <source src="https://cdn.pixabay.com/download/audio/2022/03/23/audio_87908448bb.mp3?filename=summer-joy-112331.mp3" type="audio/mpeg" />
+    Ваш браузер не підтримує аудіо елемент.
+  </audio>
+
+  <!-- Метелики махаони -->
+  <div class="butterfly" style="top: 15vh; left: -80px; animation: fly 20s linear infinite;"></div>
+  <div class="butterfly" style="top: 40vh; left: -90px; animation: fly 25s linear infinite 7s;"></div>
+  <div class="butterfly" style="top: 60vh; left: -70px; animation: fly 22s linear infinite 12s;"></div>
+
 </body>
 </html>
