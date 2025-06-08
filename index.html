@@ -1,108 +1,120 @@
-
-<!DOCTYPE html>
-<html lang="uk">
+<!DOCTYPE html><html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Махаони в лісі</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mysterious Girl — Secret Page</title>
   <style>
     body {
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-      background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1350&q=80') no-repeat center center fixed;
-      background-size: cover;
-      font-family: 'Segoe UI', Arial, sans-serif;
-      color: white;
+      background-color: #fff;
+      color: #222;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       text-align: center;
-    }
+      padding: 30px;
+      overflow-x: hidden;
+      position: relative;
+    }h1 {
+  font-size: 2.8em;
+  margin-bottom: 0.2em;
+  color: #c72c41;
+}
 
-    h1 {
-      margin-top: 20px;
-      font-size: 3em;
-      text-shadow: 2px 2px 4px #000;
-    }
+p {
+  font-size: 1.2em;
+  margin: 0.3em 0 1.5em;
+}
 
-    .greeting {
-      font-size: 3em;
-      margin: 50px 20px;
-      font-weight: bold;
-      color: #fffd7e;
-      text-shadow: 0 0 10px #ffaa00, 0 0 20px #ff9900, 2px 2px 6px #000;
-      animation: glow 2s infinite alternate;
-    }
+.taxes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto 2em;
+}
 
-    @keyframes glow {
-      from {
-        text-shadow: 0 0 10px #ffaa00, 0 0 20px #ff9900;
-      }
-      to {
-        text-shadow: 0 0 20px #ffea00, 0 0 30px #ffcc00;
-      }
-    }
+.tax-item {
+  border: 1px solid #ddd;
+  border-radius: 16px;
+  padding: 16px;
+  background: #f9f9f9;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
 
-    p {
-      font-size: 1.2em;
-      text-shadow: 1px 1px 3px #000;
-    }
+.tax-item:hover {
+  transform: translateY(-5px);
+}
 
-    .butterfly {
-      position: absolute;
-      width: 80px;
-      height: 80px;
-      background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Graphium_agalantis_MHNT_dos.jpg/120px-Graphium_agalantis_MHNT_dos.jpg') no-repeat center/contain;
-      animation: fly 15s linear infinite;
-      opacity: 0.9;
-    }
+.tax-item img {
+  max-width: 100%;
+  border-radius: 12px;
+  margin-bottom: 12px;
+}
 
-    @keyframes fly {
-      0% {
-        transform: translateX(-100px) translateY(0) rotate(0deg);
-        opacity: 1;
-      }
-      50% {
-        transform: translateX(100vw) translateY(100px) rotate(180deg);
-        opacity: 0.8;
-      }
-      100% {
-        transform: translateX(-100px) translateY(200px) rotate(360deg);
-        opacity: 1;
-      }
-    }
+a {
+  color: #c72c41;
+  text-decoration: none;
+  font-weight: bold;
+}
 
-    audio {
-      display: block;
-      margin: 30px auto 10px;
-      width: 80%;
-    }
+a:hover {
+  text-decoration: underline;
+}
+
+.qr-code {
+  margin-top: 3em;
+}
+
+/* Smoke animation */
+.smoke {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: -1;
+  background: radial-gradient(circle at 50% 50%, rgba(200,200,200,0.1), transparent 70%) repeat;
+  animation: smokeMove 15s infinite linear;
+}
+
+@keyframes smokeMove {
+  0% { background-position: 0 0; }
+  100% { background-position: 100% 100%; }
+}
+
   </style>
 </head>
 <body>
-
-  <h1>Метелики махаони 🦋</h1>
-
-  <!-- ✨ ВЕЛИКЕ ПОБАЖАННЯ -->
-  <div class="greeting">
-    Приємного дня і чудового настрою!
+<div class="smoke"></div><h1>The Mysterious Girl</h1>
+<p>Welcome to my secret page. If you want to offer me a “tax,” here are my wishes — but don’t be upset if I refuse politely.</p><div class="taxes">
+  <div class="tax-item">
+    <img src="https://cdn.douglas.pl/media/image/8c/6b/7c/Armani-Si.jpg" alt="Giorgio Armani Si">
+    <div><strong>Perfume:</strong><br> Giorgio Armani Si 100 ml</div>
+  </div>  <div class="tax-item">
+    <a href="https://flowwow.com/en-pl/flowers/1-metr-101-ecuadorian-red-rose/" target="_blank">
+      <img src="https://images.flowwow.com/data/flowers/101_roses.jpg" alt="101 red roses">
+      <div><strong>Flowers:</strong><br> 75 cm red roses</div>
+    </a>
+  </div>  <div class="tax-item">
+    <img src="https://cdn-images.farfetch-contents.com/valentino-garavani-ruched-pleated-silk-chiffon-gown_1.jpg" alt="Valentino Dress">
+    <div><strong>Dress:</strong><br> Valentino Garavani Black Dress</div>
+  </div>  <div class="tax-item">
+    <a href="https://www.paypal.com/paypalme/YanaIvanova16" target="_blank">
+      <img src="https://www.paypalobjects.com/webstatic/icon/pp258.png" alt="PayPal">
+      <div><strong>Donation:</strong><br> Send a tip via PayPal</div>
+    </a>
+  </div>  <div class="tax-item">
+    <img src="https://via.placeholder.com/300x200?text=Coming+Soon" alt="Coming Soon">
+    <div><strong>5.</strong> (To be announced)</div>
   </div>
-
-  <p>Натисніть кнопку нижче, щоб увімкнути музику</p>
-
-  <audio id="background-music" controls>
-    <source src="https://cdn.pixabay.com/download/audio/2022/03/23/audio_87908448bb.mp3?filename=summer-joy-112331.mp3" type="audio/mpeg">
-    Ваш браузер не підтримує аудіо.
-  </audio>
-
-  <!-- Метелики -->
-  <div class="butterfly" style="top: 100px; left: -80px;"></div>
-  <div class="butterfly" style="top: 200px; left: -120px; animation-delay: 5s;"></div>
-  <div class="butterfly" style="top: 300px; left: -60px; animation-delay: 10s;"></div>
-
-  <script>
-    const audio = document.getElementById('background-music');
-    audio.play().catch(() => {
-      console.log("Музика не запустилась автоматично — натисніть Play.");
-    });
-  </script>
-
-</body>
+</div><div class="qr-code">
+  <canvas id="qr" width="200" height="200"></canvas>
+  <p>Scan this QR code to visit this page</p>
+</div><script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script><script>
+  new QRCode(document.getElementById("qr"), {
+    text: window.location.href,
+    width: 200,
+    height: 200,
+  });
+</script></body>
 </html>
