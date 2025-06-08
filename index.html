@@ -1,120 +1,82 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Mysterious Girl — Secret Page</title>
+  <meta charset="UTF-8">
+  <title>Mysterious Girl</title>
   <style>
     body {
-      background-color: #fff;
-      color: #222;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      text-align: center;
-      padding: 30px;
-      overflow-x: hidden;
+      margin: 0;
+      background: #fff;
+      font-family: serif;
+      overflow: hidden;
+    }
+    .smoke {
+      position: absolute;
+      width: 100vw;
+      height: 100vh;
+      background: url('https://i.ibb.co/vPjzRSP/smoke.gif') center center / cover no-repeat;
+      opacity: 0.15;
+      pointer-events: none;
+      z-index: 0;
+    }
+    .container {
       position: relative;
-    }h1 {
-  font-size: 2.8em;
-  margin-bottom: 0.2em;
-  color: #c72c41;
-}
-
-p {
-  font-size: 1.2em;
-  margin: 0.3em 0 1.5em;
-}
-
-.taxes {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 20px;
-  max-width: 1000px;
-  margin: 0 auto 2em;
-}
-
-.tax-item {
-  border: 1px solid #ddd;
-  border-radius: 16px;
-  padding: 16px;
-  background: #f9f9f9;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-  transition: transform 0.3s ease;
-}
-
-.tax-item:hover {
-  transform: translateY(-5px);
-}
-
-.tax-item img {
-  max-width: 100%;
-  border-radius: 12px;
-  margin-bottom: 12px;
-}
-
-a {
-  color: #c72c41;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-.qr-code {
-  margin-top: 3em;
-}
-
-/* Smoke animation */
-.smoke {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  pointer-events: none;
-  z-index: -1;
-  background: radial-gradient(circle at 50% 50%, rgba(200,200,200,0.1), transparent 70%) repeat;
-  animation: smokeMove 15s infinite linear;
-}
-
-@keyframes smokeMove {
-  0% { background-position: 0 0; }
-  100% { background-position: 100% 100%; }
-}
-
+      z-index: 1;
+      padding: 3em;
+      text-align: center;
+    }
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 1em;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    li {
+      margin: 1em 0;
+    }
+    a {
+      text-decoration: none;
+      font-size: 1.2em;
+      color: #000;
+      border-bottom: 1px dashed #999;
+    }
+    img {
+      margin-top: 0.5em;
+      max-width: 300px;
+      height: auto;
+      border-radius: 10px;
+    }
   </style>
 </head>
 <body>
-<div class="smoke"></div><h1>The Mysterious Girl</h1>
-<p>Welcome to my secret page. If you want to offer me a “tax,” here are my wishes — but don’t be upset if I refuse politely.</p><div class="taxes">
-  <div class="tax-item">
-    <img src="https://cdn.douglas.pl/media/image/8c/6b/7c/Armani-Si.jpg" alt="Giorgio Armani Si">
-    <div><strong>Perfume:</strong><br> Giorgio Armani Si 100 ml</div>
-  </div>  <div class="tax-item">
-    <a href="https://flowwow.com/en-pl/flowers/1-metr-101-ecuadorian-red-rose/" target="_blank">
-      <img src="https://images.flowwow.com/data/flowers/101_roses.jpg" alt="101 red roses">
-      <div><strong>Flowers:</strong><br> 75 cm red roses</div>
-    </a>
-  </div>  <div class="tax-item">
-    <img src="https://cdn-images.farfetch-contents.com/valentino-garavani-ruched-pleated-silk-chiffon-gown_1.jpg" alt="Valentino Dress">
-    <div><strong>Dress:</strong><br> Valentino Garavani Black Dress</div>
-  </div>  <div class="tax-item">
-    <a href="https://www.paypal.com/paypalme/YanaIvanova16" target="_blank">
-      <img src="https://www.paypalobjects.com/webstatic/icon/pp258.png" alt="PayPal">
-      <div><strong>Donation:</strong><br> Send a tip via PayPal</div>
-    </a>
-  </div>  <div class="tax-item">
-    <img src="https://via.placeholder.com/300x200?text=Coming+Soon" alt="Coming Soon">
-    <div><strong>5.</strong> (To be announced)</div>
+  <div class="smoke"></div>
+  <div class="container">
+    <h1>Choose your tribute</h1>
+    <ul>
+      <li>
+        <a href="https://www.paypal.com/paypalme/YanaIvanova16" target="_blank">💸 PayPal Donation</a>
+      </li>
+      <li>
+        <a href="https://flowwow.com/en-pl/flowers/1-metr-101-ecuadorian-red-rose/" target="_blank">
+          🌹 101 Ecuadorian Roses
+        </a><br>
+        <img src="https://cdn.flowwow.com/data/2023/12/13/1/32728501/5396cf53d2a8492ef795f6f11f4f81ff.jpg" alt="Bouquet">
+      </li>
+      <li>
+        <a href="https://www.douglas.pl/pl/p/3001043796" target="_blank">
+          🌺 Giorgio Armani Si (100ml)
+        </a><br>
+        <img src="https://cdn.douglas.pl/media/image/55/e8/2e/4051022031793_3001043796.jpg" alt="Perfume">
+      </li>
+      <li>
+        <a href="https://www.mytheresa.com/euro/en/women/valentino-garavani-ruched-pleated-silk-chiffon-gown-2612217.html" target="_blank">
+          🖤 Valentino Black Dress
+        </a><br>
+        <img src="https://img.mytheresa.com/420/475/95/jpeg/catalog/product/56/P00767111.jpg" alt="Dress">
+      </li>
+    </ul>
   </div>
-</div><div class="qr-code">
-  <canvas id="qr" width="200" height="200"></canvas>
-  <p>Scan this QR code to visit this page</p>
-</div><script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script><script>
-  new QRCode(document.getElementById("qr"), {
-    text: window.location.href,
-    width: 200,
-    height: 200,
-  });
-</script></body>
+</body>
 </html>
